@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBA67C93FA9E7C3A1F51EDBB /* Pods_WebSocketsChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373106328BF9D58D90F79367 /* Pods_WebSocketsChat.framework */; };
 		CD04154A21276EE500C76E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04154921276EE500C76E27 /* AppDelegate.swift */; };
-		CD04154C21276EE500C76E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04154B21276EE500C76E27 /* ViewController.swift */; };
-		CD04154F21276EE500C76E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD04154D21276EE500C76E27 /* Main.storyboard */; };
+		CD04154C21276EE500C76E27 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04154B21276EE500C76E27 /* UsersViewController.swift */; };
 		CD04155121276EE600C76E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD04155021276EE600C76E27 /* Assets.xcassets */; };
 		CD04155421276EE600C76E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD04155221276EE600C76E27 /* LaunchScreen.storyboard */; };
 		CD04155F21276EE600C76E27 /* WebSocketsChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04155E21276EE600C76E27 /* WebSocketsChatTests.swift */; };
+		CD04156A212772AD00C76E27 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD041569212772AD00C76E27 /* ChatViewController.swift */; };
+		CD04156C2127735D00C76E27 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04156B2127735D00C76E27 /* BaseTableViewCell.swift */; };
+		CD04156E212773A400C76E27 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04156D212773A400C76E27 /* UserCell.swift */; };
+		CD041570212773EF00C76E27 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD04156F212773EF00C76E27 /* UserCell.xib */; };
+		CD0415722127751B00C76E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0415712127751B00C76E27 /* Main.storyboard */; };
+		CD0415742127788100C76E27 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0415732127788100C76E27 /* ChatCell.xib */; };
+		CD0415762127789400C76E27 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0415752127789400C76E27 /* ChatCell.swift */; };
+		CD0415B421277FCA00C76E27 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0415B321277FCA00C76E27 /* SocketIOManager.swift */; };
+		CD75463B2127AB3A0018DF35 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75463A2127AB3A0018DF35 /* HideKeyboard.swift */; };
+		D740B901D87F5D34A12C3A4E /* Pods_WebSocketsChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D90B15CCD38F17146B44042 /* Pods_WebSocketsChatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F5A3818F026FA1A474CD93B /* Pods-WebSocketsChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketsChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketsChat/Pods-WebSocketsChat.release.xcconfig"; sourceTree = "<group>"; };
+		1F0558993B69799C45D3219F /* Pods-WebSocketsChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketsChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketsChatTests/Pods-WebSocketsChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E4419D3D16AD39C334DD185 /* Pods-WebSocketsChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketsChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketsChatTests/Pods-WebSocketsChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		373106328BF9D58D90F79367 /* Pods_WebSocketsChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketsChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D90B15CCD38F17146B44042 /* Pods_WebSocketsChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebSocketsChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F824ABF686F8CA09157ACA /* Pods-WebSocketsChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebSocketsChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebSocketsChat/Pods-WebSocketsChat.debug.xcconfig"; sourceTree = "<group>"; };
 		CD04154621276EE400C76E27 /* WebSocketsChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketsChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD04154921276EE500C76E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD04154B21276EE500C76E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD04154E21276EE500C76E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD04154B21276EE500C76E27 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		CD04155021276EE600C76E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD04155321276EE600C76E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD04155521276EE600C76E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD04155A21276EE600C76E27 /* WebSocketsChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketsChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD04155E21276EE600C76E27 /* WebSocketsChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketsChatTests.swift; sourceTree = "<group>"; };
 		CD04156021276EE600C76E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD041569212772AD00C76E27 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CD04156B2127735D00C76E27 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CD04156D212773A400C76E27 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CD04156F212773EF00C76E27 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		CD0415712127751B00C76E27 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD0415732127788100C76E27 /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		CD0415752127789400C76E27 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		CD0415B321277FCA00C76E27 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		CD75463A2127AB3A0018DF35 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA67C93FA9E7C3A1F51EDBB /* Pods_WebSocketsChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +75,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D740B901D87F5D34A12C3A4E /* Pods_WebSocketsChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6039204383540BF16E6B5FCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F824ABF686F8CA09157ACA /* Pods-WebSocketsChat.debug.xcconfig */,
+				0F5A3818F026FA1A474CD93B /* Pods-WebSocketsChat.release.xcconfig */,
+				2E4419D3D16AD39C334DD185 /* Pods-WebSocketsChatTests.debug.xcconfig */,
+				1F0558993B69799C45D3219F /* Pods-WebSocketsChatTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE914C8BEF7A699D5586B147 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373106328BF9D58D90F79367 /* Pods_WebSocketsChat.framework */,
+				7D90B15CCD38F17146B44042 /* Pods_WebSocketsChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD04153D21276EE400C76E27 = {
 			isa = PBXGroup;
 			children = (
 				CD04154821276EE400C76E27 /* WebSocketsChat */,
 				CD04155D21276EE600C76E27 /* WebSocketsChatTests */,
 				CD04154721276EE400C76E27 /* Products */,
+				AE914C8BEF7A699D5586B147 /* Frameworks */,
+				6039204383540BF16E6B5FCB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +126,19 @@
 			isa = PBXGroup;
 			children = (
 				CD04154921276EE500C76E27 /* AppDelegate.swift */,
-				CD04154B21276EE500C76E27 /* ViewController.swift */,
-				CD04154D21276EE500C76E27 /* Main.storyboard */,
+				CD04154B21276EE500C76E27 /* UsersViewController.swift */,
 				CD04155021276EE600C76E27 /* Assets.xcassets */,
+				CD0415712127751B00C76E27 /* Main.storyboard */,
 				CD04155221276EE600C76E27 /* LaunchScreen.storyboard */,
+				CD04156F212773EF00C76E27 /* UserCell.xib */,
+				CD0415732127788100C76E27 /* ChatCell.xib */,
 				CD04155521276EE600C76E27 /* Info.plist */,
+				CD0415752127789400C76E27 /* ChatCell.swift */,
+				CD041569212772AD00C76E27 /* ChatViewController.swift */,
+				CD04156B2127735D00C76E27 /* BaseTableViewCell.swift */,
+				CD04156D212773A400C76E27 /* UserCell.swift */,
+				CD0415B321277FCA00C76E27 /* SocketIOManager.swift */,
+				CD75463A2127AB3A0018DF35 /* HideKeyboard.swift */,
 			);
 			path = WebSocketsChat;
 			sourceTree = "<group>";
@@ -103,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD04156321276EE600C76E27 /* Build configuration list for PBXNativeTarget "WebSocketsChat" */;
 			buildPhases = (
+				D4E03C8EFFD3B55F76440B5A /* [CP] Check Pods Manifest.lock */,
 				CD04154221276EE400C76E27 /* Sources */,
 				CD04154321276EE400C76E27 /* Frameworks */,
 				CD04154421276EE400C76E27 /* Resources */,
+				58C6D2C6206415BA603126D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD04156621276EE600C76E27 /* Build configuration list for PBXNativeTarget "WebSocketsChatTests" */;
 			buildPhases = (
+				0AF05F35590AB3134B68D5BD /* [CP] Check Pods Manifest.lock */,
 				CD04155621276EE600C76E27 /* Sources */,
 				CD04155721276EE600C76E27 /* Frameworks */,
 				CD04155821276EE600C76E27 /* Resources */,
@@ -177,9 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD041570212773EF00C76E27 /* UserCell.xib in Resources */,
 				CD04155421276EE600C76E27 /* LaunchScreen.storyboard in Resources */,
+				CD0415742127788100C76E27 /* ChatCell.xib in Resources */,
 				CD04155121276EE600C76E27 /* Assets.xcassets in Resources */,
-				CD04154F21276EE500C76E27 /* Main.storyboard in Resources */,
+				CD0415722127751B00C76E27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +253,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AF05F35590AB3134B68D5BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebSocketsChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58C6D2C6206415BA603126D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebSocketsChat/Pods-WebSocketsChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebSocketsChat/Pods-WebSocketsChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E03C8EFFD3B55F76440B5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebSocketsChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD04154221276EE400C76E27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD04154C21276EE500C76E27 /* ViewController.swift in Sources */,
+				CD75463B2127AB3A0018DF35 /* HideKeyboard.swift in Sources */,
+				CD04156C2127735D00C76E27 /* BaseTableViewCell.swift in Sources */,
+				CD04154C21276EE500C76E27 /* UsersViewController.swift in Sources */,
+				CD0415B421277FCA00C76E27 /* SocketIOManager.swift in Sources */,
+				CD04156A212772AD00C76E27 /* ChatViewController.swift in Sources */,
+				CD04156E212773A400C76E27 /* UserCell.swift in Sources */,
 				CD04154A21276EE500C76E27 /* AppDelegate.swift in Sources */,
+				CD0415762127789400C76E27 /* ChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +347,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD04154D21276EE500C76E27 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD04154E21276EE500C76E27 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD04155221276EE600C76E27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +395,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -337,6 +456,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -356,10 +476,12 @@
 		};
 		CD04156421276EE600C76E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F824ABF686F8CA09157ACA /* Pods-WebSocketsChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9M646C2A7;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = WebSocketsChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,6 +496,7 @@
 		};
 		CD04156521276EE600C76E27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5A3818F026FA1A474CD93B /* Pods-WebSocketsChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +515,7 @@
 		};
 		CD04156721276EE600C76E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4419D3D16AD39C334DD185 /* Pods-WebSocketsChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +537,7 @@
 		};
 		CD04156821276EE600C76E27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0558993B69799C45D3219F /* Pods-WebSocketsChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
