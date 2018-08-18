@@ -35,7 +35,6 @@ io.on('connection', function(clientSocket){
     io.emit("userExitUpdate", clientNickname);
     io.emit("userTypingUpdate", typingUsers);
   });
- 
 
   clientSocket.on("exitUser", function(clientNickname){
     for (var i = 0; i < userList.length; i++) {
